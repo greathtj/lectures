@@ -8,7 +8,7 @@ TARGET_WIDTH = 800
 TARGET_HEIGHT = 600
 
 # Define the folder to save images
-SAVE_FOLDER = "C:/Users/greathtj/Desktop/photos"
+SAVE_FOLDER = "C:/Users/greathtj/Desktop/photos/empty"
 
 # Create the folder if it doesn't exist
 if not os.path.exists(SAVE_FOLDER):
@@ -23,7 +23,7 @@ cap.set(cv2.CAP_PROP_FRAME_HEIGHT, TARGET_HEIGHT)
 
 continuous_shot_mode = False
 last_shot_time = 0
-shot_interval = 1 # seconds
+shot_interval = 0.5 # seconds
 
 while True:
     ret, frame = cap.read()
